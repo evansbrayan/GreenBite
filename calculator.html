@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreenBite | Calorie & Nutrition Calculator</title>
+  <link rel="stylesheet" href="assets/css/calculator.css"/>
+  <script defer src="assets/js/calculator.js"></script>
+</head>
+<body>
+  <!-- Simple top nav -->
+ <header class="navbar">
+    <div class="logo">🌿 GreenBite</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./recipes.html">Recipes</a></li>
+        <li><a href="./calculator.html">Calculator</a></li>
+        <li><a href="./workouts.html">Workouts</a></li>
+        <li><a href="./mindfulness.html">Mindfulness</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Calorie & Nutrition Calculator</h1>
+
+    <section class="grid">
+      <!-- LEFT: FORM -->
+      <article class="panel">
+        <h2 class="panel__title">Your Details</h2>
+
+        <label class="field">
+          <span class="field__label">Age</span>
+          <input id="age" class="field__input" type="number" min="10" max="100" value="30" />
+        </label>
+
+        <div class="field">
+          <span class="field__label">Gender</span>
+          <div class="radio-row">
+            <label class="radio"><input type="radio" name="sex" value="male" checked> Male</label>
+            <label class="radio"><input type="radio" name="sex" value="female"> Female</label>
+          </div>
+        </div>
+
+        <label class="field">
+          <span class="field__label">Height (cm)</span>
+          <input id="height" class="field__input" type="number" min="100" max="230" value="170" />
+        </label>
+
+        <label class="field">
+          <span class="field__label">Weight (kg)</span>
+          <input id="weight" class="field__input" type="number" min="30" max="250" value="70" />
+        </label>
+
+        <label class="field">
+          <span class="field__label">Activity Level</span>
+          <select id="activity" class="field__input">
+            <option value="1.2">Sedentary (little or no exercise)</option>
+            <option value="1.375">Lightly Active (1–3 days/week)</option>
+            <option value="1.55" selected>Moderately Active (3–5 days/week)</option>
+            <option value="1.725">Very Active (6–7 days/week)</option>
+            <option value="1.9">Extra Active (physical job + training)</option>
+          </select>
+        </label>
+
+        <button id="calcBtn" class="btn">Calculate</button>
+      </article>
+
+      <!-- RIGHT: RESULTS -->
+      <article class="panel">
+        <h2 class="panel__title">Your Daily Targets</h2>
+
+        <div class="kcal">
+          <div class="kcal__label">Estimated Daily Calorie Target</div>
+          <div id="kcalOut" class="kcal__value">1733 kcal</div>
+        </div>
+
+        <h3 class="section-title">Macronutrients</h3>
+        <div class="bars">
+          <div class="bar">
+            <span class="bar__label">Protein</span>
+            <span id="pPct" class="bar__pct">30%</span>
+            <div class="bar__track"><div id="pBar" class="bar__fill bar--protein" style="width:30%"></div></div>
+          </div>
+          <div class="bar">
+            <span class="bar__label">Carbohydrates</span>
+            <span id="cPct" class="bar__pct">45%</span>
+            <div class="bar__track"><div id="cBar" class="bar__fill bar--carb" style="width:45%"></div></div>
+          </div>
+          <div class="bar">
+            <span class="bar__label">Fats</span>
+            <span id="fPct" class="bar__pct">25%</span>
+            <div class="bar__track"><div id="fBar" class="bar__fill bar--fat" style="width:25%"></div></div>
+          </div>
+        </div>
+
+        <h3 class="section-title">Macronutrient Distribution</h3>
+        <div class="donut">
+          <!-- Basic SVG donut (JS updates the strokes) -->
+          <svg viewBox="0 0 100 100" class="donut__svg">
+            <circle class="donut__bg" cx="50" cy="50" r="40"/>
+            <circle id="arcProtein" class="donut__arc donut--protein" cx="50" cy="50" r="40"/>
+            <circle id="arcCarb"    class="donut__arc donut--carb"    cx="50" cy="50" r="40"/>
+            <circle id="arcFat"     class="donut__arc donut--fat"     cx="50" cy="50" r="40"/>
+            <text id="donutCenter" x="50" y="54" text-anchor="middle" class="donut__text">30%</text>
+          </svg>
+
+          <ul class="legend">
+            <li><span class="dot dot--protein"></span>Protein</li>
+            <li><span class="dot dot--carb"></span>Carbohydrates</li>
+            <li><span class="dot dot--fat"></span>Fats</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__links">
+      <a href="#">Quick Links</a>
+      <a href="#">Company</a>
+      <a href="#">Legal</a>
+    </div>
+    <p class="footer__copy">© 2025 GreenBite · Student demo</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreenBite | Recipes</title>
+  <link rel="stylesheet" href="assets/css/recipes.css"/>
+  <script defer src="assets/js/recipes.js"></script>
+</head>
+<body>
+  <!-- ===== Top Nav (very basic) ===== -->
+  <header class="navbar">
+    <div class="logo">🌿 GreenBite</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./recipes.html">Recipes</a></li>
+        <li><a href="./calculator.html">Calculator</a></li>
+        <li><a href="./workouts.html">Workouts</a></li>
+        <li><a href="./mindfulness.html">Mindfulness</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Page Header ===== -->
+  <section class="page-head container">
+    <h1 class="page-head__title">Nourish Your Body, Delight Your Senses</h1>
+    <p class="page-head__subtitle">
+      Discover healthy recipes for every meal and dietary need.
+    </p>
+  </section>
+
+  <!-- ===== Controls (Search + Filters) ===== -->
+  <section class="controls container">
+    <div class="controls__row">
+      <div class="control control--search">
+        <span class="control__icon">🔎</span>
+        <input id="searchInput" class="control__input" type="text"
+               placeholder="Search recipes by name or ingredient..." />
+      </div>
+
+      <select id="mealFilter" class="control control--select">
+        <option value="All">All Meals</option>
+        <option>Breakfast</option>
+        <option>Lunch</option>
+        <option>Dinner</option>
+        <option>Snack</option>
+        <option>Dessert</option>
+      </select>
+
+      <select id="dietFilter" class="control control--select">
+        <option value="All">All Diets</option>
+        <option>Vegetarian</option>
+        <option>Vegan</option>
+        <option>High-Protein</option>
+        <option>Gluten-Free</option>
+      </select>
+
+      <select id="timeFilter" class="control control--select">
+        <option value="All">All Times</option>
+        <option value="10">≤ 10 mins</option>
+        <option value="20">≤ 20 mins</option>
+        <option value="30">≤ 30 mins</option>
+      </select>
+
+      <select id="ratingFilter" class="control control--select">
+        <option value="All">Any Rating</option>
+        <option value="4">★ 4.0+</option>
+        <option value="4.5">★ 4.5+</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- ===== Recipes Grid ===== -->
+  <main class="container">
+    <div id="recipesGrid" class="grid"></div>
+  </main>
+
+  <!-- ===== Footer (tiny) ===== -->
+  <footer class="footer">
+    <div class="footer__links">
+      <a href="#">Quick Links</a>
+      <a href="#">Company</a>
+      <a href="#">Legal</a>
+    </div>
+    <p class="footer__copy">© 2025 GreenBite · Simple student demo</p>
+  </footer>
+</body>
+</html>

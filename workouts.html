@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Generator</title>
+  <link rel="stylesheet" href="assets/css/workouts.css">
+</head>
+<body>
+  <!-- Header Section -->
+ <header class="navbar">
+    <div class="logo">🌿 GreenBite</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./recipes.html">Recipes</a></li>
+        <li><a href="./calculator.html">Calculator</a></li>
+        <li><a href="./workouts.html">Workouts</a></li>
+        <li><a href="./mindfulness.html">Mindfulness</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Generate Your Perfect Workout</h1>
+      <p>Easily create personalized workout plans tailored to your preferences. Select your target body part and available equipment, and let GreenBite do the rest.</p>
+    </div>
+  </section>
+
+  <!-- Workout Customization -->
+  <section class="customize-workout">
+    <h2>Customize Your Workout</h2>
+    <form>
+      <div>
+        <label for="bodyPart">Body Part:</label>
+        <select id="bodyPart" name="bodyPart">
+          <option value="full-body">Full Body</option>
+          <option value="lower-body">Lower Body</option>
+          <option value="upper-body">Upper Body</option>
+        </select>
+      </div>
+      <div>
+        <label for="equipment">Equipment:</label>
+        <select id="equipment" name="equipment">
+          <option value="bodyweight">Bodyweight</option>
+          <option value="dumbbells">Dumbbells</option>
+          <option value="kettlebells">Kettlebells</option>
+        </select>
+      </div>
+      <button type="submit" class="generate-btn">Generate Workout</button>
+    </form>
+  </section>
+
+  <h2 style="margin-left: 2em;">Your Personalized Workout Plan</h2>
+  <!-- Workout Plan Section -->
+  <section class="workout-plan">
+    
+    <div class="workout-card">
+      <img src="./image/pexels-ivan-samkov-4164465.jpg" alt="Squats">
+      <h3>Squats</h3>
+      <p>3 sets of 10-12 reps</p>
+    </div>
+    <div class="workout-card">
+      <img src="./image/pexels-keiji-yoshiki-31563-176782.jpg" alt="Push-ups">
+      <h3>Push-ups</h3>
+      <p>3 sets of 8-15 reps</p>
+    </div>
+    <div class="workout-card">
+      <img src="./image/pexels-elly-fairytale-3823063.jpg" alt="Plank">
+      <h3>Plank</h3>
+      <p>3 sets for 30-60 seconds</p>
+    </div>
+    <!-- More exercises can be added here -->
+  </section>
+
+  <!-- Rest Timer Section -->
+  <section class="rest-timer">
+    <h2>Rest Timer</h2>
+    <p>Set your rest period and stay on track between sets.</p>
+    <div>
+      <input type="range" id="timer" min="0" max="300" value="60">
+      <span id="timerValue">01:00</span>
+    </div>
+    <button id="startBtn">Start</button>
+    <button id="pauseBtn">Pause</button>
+    <button id="resetBtn">Reset</button>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-top">
+      <p>Your daily dose of wellness, delivered.</p>
+      <div class="socials">
+        <a href="https://web.facebook.com/?_rdc=1&_rdr#"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="https://x.com/i/flow/login"><img src="images/twitter.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com/accounts/login/"><img src="images/icon1.png" alt="Instagram"></a>
+        <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="YouTube"></a>
+      </div>
+    </div>
+  <script src="assets/js/workouts.js"></script>
+</body>
+</html>

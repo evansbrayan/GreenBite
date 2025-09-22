@@ -1,0 +1,52 @@
+{
+  "recipes": [
+    {
+      "name": "Mediterranean Quinoa Salad",
+      "category": "Lunch",
+      "time": "15 mins",
+      "rating": 4.8,
+      "description": "A refreshing and healthy salad packed with fresh vegetables, quinoa, and a zesty lemon dressing.",
+      "image": "./image/pexels-daniela-elena-tentis-118658-1213710.jpg"
+    },
+    {
+      "name": "Spicy Peanut Noodles",
+      "category": "Dinner",
+      "time": "20 mins",
+      "rating": 4.5,
+      "description": "Flavorful and quick, these vegan peanut noodles are perfect for a weeknight meal.",
+      "image": "path_to_image/spicy_peanut_noodles.jpg"
+    },
+    {
+      "name": "Overnight Oats with Berries",
+      "category": "Breakfast",
+      "time": "5 mins",
+      "rating": 4.9,
+      "description": "A quick, customizable, and nutritious breakfast perfect for busy mornings.",
+      "image": ""
+    },
+    {
+      "name": "Baked Salmon with Roasted Veggies",
+      "category": "Dinner",
+      "time": "10 mins",
+      "rating": 4.7,
+      "description": "A simple yet elegant meal, rich in omega-3s and quick to prepare.",
+      "image": "image/pexels-enginakyurt-2347383.jpg"
+    },
+    {
+      "name": "Berry Chia Pudding",
+      "category": "Dessert",
+      "time": "5 mins",
+      "rating": 4.6,
+      "description": "A naturally sweet and satisfying dessert or healthy snack.",
+      "image": "path_to_image/berry_chia_pudding.jpg"
+    },
+    {
+      "name": "Healthy Chicken Stir-fry",
+      "category": "Dinner",
+      "time": "20 mins",
+      "rating": 4.4,
+      "description": "A quick and vibrant stir-fry with lean chicken and plenty of crisp vegetables.",
+      "image": "path_to_image/healthy_chicken_stir_fry.jpg"
+    }
+  ]
+}

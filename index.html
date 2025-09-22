@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenBite | Home</title>
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <script defer src="./assets/js/script.js"></script>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="navbar">
+  <div class="logo">🌿 GreenBite</div>
+
+  <!-- Hamburger Button -->
+  <div class="hamburger" id="hamburger">
+    ☰
+  </div>
+
+  <nav>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="./index.html" class="active">Home</a></li>
+      <li><a href="./recipes.html">Recipes</a></li>
+      <li><a href="./calculator.html">Calculator</a></li>
+      <li><a href="./workouts.html">Workouts</a></li>
+      <li><a href="./mindfulness.html">Mindfulness</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-text"></div>
+    <h1>Nourish Your Body, Elevate Your Life.</h1>
+    <button class="btn">Explore Our Recipes</button>
+  </section>
+
+  <!-- ===== DAILY TIP ===== -->
+  <section class="daily-tip">
+    <h2>Daily Health Tip</h2>
+    <p id="tip-text">Loading tip...</p>
+    <p class="tip-author">— GreenBite Wellness Experts</p>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter">
+    <h2>Stay Healthy, Stay Informed</h2>
+    <p>Subscribe to our newsletter for the latest healthy recipes, workout tips, and mindfulness exercises delivered straight to your inbox.</p>
+    <div class="newsletter-form">
+      <input type="email" placeholder="Enter your email">
+      <button class="btn">Subscribe</button>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-links">
+      <a href="#">Quick Links</a>
+      <a href="#">Company</a>
+      <a href="#">Legal</a>
+    </div>
+    <p class="copyright">© 2025 GreenBite. All rights reserved.</p>
+  </footer>
+
+  <script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("/sw.js")
+    .then(() => console.log("Service Worker registered"))
+    .catch((err) => console.error("Service Worker registration failed:", err));
+}
+</script>
+
+</body>
+</html>

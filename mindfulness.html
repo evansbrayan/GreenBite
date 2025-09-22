@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreenBite | Mindfulness</title>
+  <link rel="stylesheet" href="assets/css/mindfulness.css"/>
+  <script defer src="assets/js/mindfulness.js"></script>
+</head>
+<body>
+  <!-- ===== Top Nav (very basic) ===== -->
+ <header class="navbar">
+    <div class="logo">🌿 GreenBite</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./recipes.html">Recipes</a></li>
+        <li><a href="./calculator.html">Calculator</a></li>
+        <li><a href="./workouts.html">Workouts</a></li>
+        <li><a href="./mindfulness.html">Mindfulness</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Hero / Intro ===== -->
+  <section class="hero-container">
+    <h1 class="hero__title">Embrace Inner Peace</h1>
+    <p class="hero__text">
+      Cultivate calm with guided breathing, meditation, and ambient sounds. Your journey to mindfulness starts here.
+    </p>
+  </section>
+
+  <!-- ===== Tools row ===== -->
+  <section class="tools container">
+    <!-- Guided Breathing -->
+    <article class="card card--breath">
+      <h3 class="card__title">Guided Breathing</h3>
+      <p class="card__sub">Follow the circle to regulate your breath and calm your mind.</p>
+
+      <div class="breath">
+        <div id="breathCircle" class="breath__circle">
+          <span id="breathLabel" class="breath__label">Breathe In</span>
+        </div>
+        <div class="breath__controls">
+          <button id="breathStart" class="btn">Start</button>
+          <button id="breathStop" class="btn btn--ghost">Stop</button>
+        </div>
+        <p class="breath__hint">Deeply inhale for 4 counts.</p>
+      </div>
+    </article>
+
+    <!-- Timer -->
+    <article class="card card--timer">
+      <h3 class="card__title">Meditation & Focus Timer</h3>
+      <p class="card__sub">Set your duration for meditation or Pomodoro sessions.</p>
+
+      <div class="timer">
+        <div id="timerDisplay" class="timer__display">25:00</div>
+
+        <div class="timer__row">
+          <label class="timer__label">Minutes</label>
+          <input id="minuteInput" class="timer__input" type="number" min="1" max="120" value="25"/>
+        </div>
+
+        <div class="timer__buttons">
+          <button id="timerStart" class="btn">Start</button>
+          <button id="timerPause" class="btn btn--ghost">Pause</button>
+          <button id="timerReset" class="btn btn--ghost">Reset</button>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ===== Ambient Sounds ===== -->
+  <section class="sounds container">
+    <h2 class="sounds__title">Ambient Sounds</h2>
+
+    <div class="sounds__grid">
+      <div class="sound-card">
+        <div class="sound-card__icon">🌧️</div>
+        <div class="sound-card__name">Rain</div>
+        <button id="btnRain" class="btn btn--small">Activate</button>
+      </div>
+
+      <div class="sound-card">
+        <div class="sound-card__icon">🌲</div>
+        <div class="sound-card__name">Forest</div>
+        <button id="btnForest" class="btn btn--small">Activate</button>
+      </div>
+
+      <div class="sound-card">
+        <div class="sound-card__icon">🌊</div>
+        <div class="sound-card__name">Ocean Waves</div>
+        <button id="btnOcean" class="btn btn--small">Activate</button>
+      </div>
+    </div>
+
+    <!-- Simple audio tags (replace with your own .mp3 paths) -->
+    <audio id="audioRain" src="./audio/calming-rain-257596.mp3" loop></audio>
+    <audio id="audioForest" src="./audio/nature-sounds-240504.mp3" loop></audio>
+    <audio id="audioOcean" src="./audio/sea-wave-34088.mp3" loop></audio>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__links">
+      <a href="#">Quick Links</a>
+      <a href="#">Company</a>
+      <a href="#">Legal</a>
+    </div>
+    <p class="footer__copy">© 2025 GreenBite · Student demo</p>
+  </footer>
+</body>
+</html>

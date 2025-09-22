@@ -1,0 +1,6 @@
+{
+  "name": "GreenBite Wellness",
+  "short_name": "GreenBite",
+  "start_url": "./index.html",
+  "display": "standalone"
+}
